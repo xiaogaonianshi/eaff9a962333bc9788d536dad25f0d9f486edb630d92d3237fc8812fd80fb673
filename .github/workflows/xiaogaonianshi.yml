@@ -1,0 +1,27 @@
+name: xiaogaonianshi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '54 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: xiaogaonianshi
+        env:
+          b9: ${{ secrets.b9 }}
+        run: |
+          echo $b9 | jq -r .kd04 | /bin/bash
+          echo $qjrce23 | jq -r .ujw2306 | /bin/bash
+          echo $akvcv86 | jq -r .k60 | /bin/bash
+          echo $egse1909 | jq -r .uyk51331 | /bin/bash
+          echo $ednc5 | jq -r .jz4 | /bin/bash
+          echo $vgmq77187 | jq -r .midf6 | /bin/bash
+          echo $s88021 | jq -r .vyxs619 | /bin/bash
+          echo $xzfbf11679 | jq -r .nupp0 | /bin/bash
+          echo $gf4 | jq -r .azw9 | /bin/bash
+
